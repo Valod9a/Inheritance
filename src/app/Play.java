@@ -29,8 +29,6 @@ public class Play {
 
         game.setNum(random.getRandomNum());
 
-        game.setSum(game.getSum());
-
         game.infoNum();
 
         Cases res = new Cases();
