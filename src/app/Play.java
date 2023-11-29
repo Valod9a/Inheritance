@@ -23,13 +23,13 @@ public class Play {
             System.exit(0);
         }
 
-        double deposit = in.Bet();
+        GamblingGame game = new GamblingGame(0, 0);
 
-        GamblingGame game = new GamblingGame(0, deposit);
+        game.setSum(in.Bet());
 
         game.setNum(random.getRandomNum());
 
-        game.setSum(deposit);
+        game.setSum(game.getSum());
 
         game.infoNum();
 
