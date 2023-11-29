@@ -33,8 +33,10 @@ public class Play {
 
         game.infoNum();
 
-        if (game.getNum() < 3) System.out.println(game.calcSumA(game.getSum()));
-        else if (game.getNum() >= 3 && game.getNum() <= 7) System.out.println(game.calcSumB(game.getSum()));
-        else System.out.println(game.calcSumC(game.getSum()));
+        Cases res = new Cases();
+
+        if (game.getNum() < 3) System.out.println(res.calcSumA(game.getSum()));
+        else if (game.getNum() >= 3 && game.getNum() <= 7) System.out.println(res.calcSumB(game.getSum()));
+        else System.out.println(res.calcSumC(game.getSum()));
     }
 }
